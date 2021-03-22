@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+
+  padding: 9rem 15rem;
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+}
+
+.gorny {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50%;
+}
+
+.text {
+  flex-basis: 40%;
+}
+
+.text h1 {
+  font-size: 47px;
+  margin: 20px 0;
+  color: hsl(300, 43%, 22%);
+  width: 80%;
+}
+
+.text h2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(231, 216, 216);
+}
+
+.stars {
+  flex-basis: 60%;
+  margin-top: 4rem;
+  margin-left: 8rem;
+}
+
+.star1,
+.star2,
+.star3 {
+  background-color: rgb(236, 217, 217);
+  margin: 2rem;
+  border-radius: 10px;
+  margin-left: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 3rem;
+  width: 60%;
+}
+.star1 {
+  transform: translateX(-5rem);
+}
+
+.star3 {
+  transform: translateX(5rem);
+}
+
+.star1 h3,
+.star2 h3,
+.star3 h3 {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.star1 .container {
+  width: 44%;
+}
+.star2 .container {
+  width: 44%;
+}
+
+.star3 .container {
+  width: 44%;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.statements {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statement1,
+.statement2,
+.statement3 {
+  background-color: hsl(300, 43%, 22%);
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  padding: 2rem 1rem;
+}
+
+.person img {
+  width: 18%;
+  border-radius: 50px;
+  margin-right: 1.5rem;
+}
+
+.person h4,
+.person h5 {
+  font-size: 15px;
+  color: hsl(333, 80%, 67%);
+}
+.person h4 {
+  color: rgb(192, 170, 170);
+  padding-bottom: 0.5rem;
+}
+
+.statement1,
+.statement2,
+.statement3 {
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.statement2 {
+  transform: translateY(2rem);
+}
+
+.statement3 {
+  transform: translateY(4rem);
+}
+
+.attribution {
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 1450px) {
+  .wrapper {
+    padding: 7rem 9rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    padding: 7rem 6rem;
+  }
+
+  .star1,
+  .star2,
+  .star3 {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .wrapper {
+    padding: 5rem 6rem;
+  }
+  .gorny {
+    margin-bottom: 3rem;
+  }
+  .stars {
+    margin-left: 2rem;
+  }
+  .star1,
+  .star2,
+  .star3 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .gorny {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .text h1 {
+    width: 100%;
+  }
+
+  .star1,
+  .star2,
+  .star3 {
+    transform: translateX(-2rem);
+  }
+
+  .stars {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .star1,
+  .star2,
+  .star3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .statements {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .wrapper {
+    background-image: url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 20%, right bottom;
+  }
+}
